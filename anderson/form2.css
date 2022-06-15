@@ -1,0 +1,488 @@
+/*reset*/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+   
+  body {
+    background: #eee;
+    font-family: Arial;
+  }
+  /*envolve todo o nosso conteudo*/
+.tab {
+    width: 700px;
+    margin: 50px auto;
+  }
+  /*esconde o radio button*/
+.tab input[type] {
+    display: none;}
+
+    /*nossos proprios botoes*/
+.tab label {
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+  }
+
+  /*ataca o label com hover e o radio button checkado*/
+.tab label:hover,
+.tab input:checked + label {
+  background: #0577b9;
+  color: #fff;
+}
+
+/*o conteudo que mudar ao clicar nos booes*/
+.tabs {
+    clear: both;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+  }
+
+  /*aqui a nossa content*/
+.tabs .content {
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    border: 2px solid #0577b9;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+    transition: opacity .3s, transform 1s;
+    z-index: 0;
+  }
+
+  /*aqui estao nosso links*/
+#tab1:checked ~ .tabs .content:nth-of-type(1),
+#tab2:checked ~ .tabs .content:nth-of-type(2),
+#tab3:checked ~ .tabs .content:nth-of-type(3),
+#tab4:checked ~ .tabs .content:nth-of-type(4) {
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+.resumo1{
+width:500px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+position: initial;
+}
+/* Menu Exames laboratoriais*/
+
+/*Hemograma*/
+
+.hemograma
+{
+  display: table-cell;
+  float: left;
+}
+.texthemo{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+.texthemo1{
+text-align: justify;
+}
+
+.texthemo2{
+text-align: justify;
+}
+
+.buttonhemo{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color:#0577b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  float:right;
+}
+
+.buttonhemo{
+  background-color: #0577b9}
+
+  .buttonhemo {
+  background-color: #0577b9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/*Urina*/
+
+.linha{
+  margin: 10em;
+}
+.urina
+{
+  display: table-cell;
+  float: left;
+}
+.texturina{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+
+
+.buttonuri{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color:#0577b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  float:right;
+}
+
+.buttonuri{
+  background-color: #0577b9}
+
+  .buttonuri {
+  background-color: #0577b9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*Preventivos*/
+
+.linha{
+  margin: 10em;
+}
+.urina
+{
+  display: table-cell;
+  float: left;
+}
+.texturina{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+
+
+.buttonuri{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color:#0577b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  float:right;
+}
+
+.buttonuri{
+  background-color: #0577b9}
+
+  .buttonuri {
+  background-color: #0577b9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/*Exames de Imagens*/
+
+/*Raio-X*/
+
+.raio-x
+{
+  display: table-cell;
+  float: left;
+}
+.textraio{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+.buttonraio{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color:#0577b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  float:right;
+}
+
+.buttonraio{
+  background-color: #0577b9}
+
+  .buttonraio {
+  background-color: #0577b9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*ultrasson*/
+
+.ultrasson
+{
+  display: table-cell;
+  float: left;
+}
+.textultra{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+.buttonultra{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color:#0577b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  float:right;
+}
+
+.buttonultra{
+  background-color: #0577b9}
+
+  .buttonultra {
+  background-color: #0577b9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*Ressonância Magnética*/
+
+.ressonancia
+{
+  display: table-cell;
+  float: left;
+}
+.textresso{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+.buttonresso{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color:#0577b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  float:right;
+}
+
+.buttonresso{
+  background-color: #0577b9}
+
+  .buttonresso {
+  background-color: #0577b9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Menu Covid-19*/
+
+.covid1 {
+  text-align: justify;
+
+}
+
+.covid
+{
+  display: table-cell;
+  float: left;
+}
+.textcovid{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+.buttoncovid{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color:#0577b9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  float:right;
+}
+
+.buttoncovid{
+  background-color: #0577b9}
+
+  .buttoncovid {
+  background-color: #0577b9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.covid2
+{
+  display: table-cell;
+  float: right;
+}
+.textcovid2{
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin: 1em;
+  text-align: justify;
+ 
+}
+
+/* Menu superior*/
+
+.titulo{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  height: 600px;
+  background: #076585; 
+   /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(25, 255, 236, 0.507), #1a75fd9c), url(../anderson/menu.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(25, 255, 236, 0.507), #1a75fd9c), url(../anderson/menu.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+nav{
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+
+nav > a{
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+
+nav > a:houver{
+  text-decoration: underline;
+}
+header .textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.textos-header h1{
+  font-size: 50px;
+  color: #fff;
+}
+
+.textos-header h2{
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.fundo-letra{
+  color: white; text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.fundo-letra2{
+  color: white; text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+
+
+
+  
